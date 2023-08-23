@@ -32,25 +32,25 @@ const CONFIG = {
   },
 
   // CONFIG configration (required)
-  link: "https://junhlee.tech",
+  link: "https://junhlee-dev.vercel.app",
   since: 2023, // If leave this empty, current year will be used.
   lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
-  // notion configuration (required)
+    // notion configuration (required)
   notionConfig: {
     pageId: process.env.NOTION_PAGE_ID,
   },
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: true,
+    enable: false,
     config: {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
   googleSearchConsole: {
-    enable: true,
+    enable: false,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
@@ -58,7 +58,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "Junhdev/junhlee-dev",
+      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO,
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
