@@ -11,10 +11,7 @@ const CONFIG = {
     instagram: "",
   },
   projects: [
-    {
-      name: "모도코",
-      href: "https://github.com/SWM-FIRE/modoco-frontend",
-    },
+    
     {
       name: "테오의 컨퍼런스 홈페이지",
       href: "https://github.com/TeoConference/teo-2023-fe",
